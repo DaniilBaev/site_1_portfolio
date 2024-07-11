@@ -1,0 +1,511 @@
+/*  general styles */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 100%;
+    width: 1440px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+:root {
+    --main-color: #48555B;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 250px;
+    padding-right: 234px;
+}
+
+/* header */
+
+.header__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../img/bg.png);
+    max-width: 1440px;
+    min-height: 769px;
+
+    padding: 41px 0 71px 0;
+}
+
+.header__logo {
+    display: block;
+    background-image: url(../img/company-logo-white.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 101px;
+    height: 23px;
+}
+
+.header__content {
+    padding-top: 100px;
+    text-align: center;
+    /* width: 576px; */
+}
+
+.header__title {
+    font-family: "BebasNeueBold Regular", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 0.1em;
+    color: #fff;
+    margin-bottom: 21px;
+    font-stretch: 10%;
+}
+
+.header__text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.header__caption {
+    font-weight: 600;
+    font-size: 11px;
+    color: #fff;
+}
+
+/* nav */
+
+.nav__bar {
+    justify-content: space-between;
+    width: 100%;
+    padding: 24px 250px;
+    border-bottom: 1px solid #E6E6E6;
+
+
+}
+
+.nav__bar_logo {
+    display: block;
+    background-image: url(../img/projeco-logo-black.png);
+    width: 80px;
+    height: 18px;
+    margin-right: 20px;
+}
+
+.nav__list {
+    gap: 40px;
+    padding: 0;
+}
+
+.nav__item {
+    list-style: none;
+}
+
+.nav__link {
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.09em;
+    transition: color .2s ease-in-out;
+}
+
+.nav__link:hover {
+    color: #00A4E5;
+}
+
+/* our story */
+.story {
+    margin-bottom: 119px;
+}
+
+.section__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+.story__title {
+    padding-top: 57px;
+    margin-bottom: 56px;
+}
+
+.story__title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #00a4e5;
+    margin: 10px auto 0;
+}
+
+.story__inner {
+    justify-content: center;
+}
+
+.story__left {
+    margin-right: 77px;
+    width: 406px;
+}
+
+.story__left__title {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    line-height: 1.3em;
+    color: var(--main-color);
+    margin-bottom: 33px;
+}
+
+.accent_color {
+    color: #16ACE8;
+}
+
+.story__left__text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 177%;
+    letter-spacing: 0.01em;
+    color: var(--main-color);
+}
+
+.story__right {
+    display: flex;
+    align-items: flex-end;
+}
+
+.story__item {
+    padding: 15px;
+    margin-right: 20px;
+    font-weight: 800;
+    font-size: 24px;
+    text-transform: uppercase;
+    width: 140px;
+    height: 224px;
+    color: #fff;
+}
+
+.story__item:nth-child(1) {
+    background-image: url(../img/we_plan.jpg);
+}
+
+.story__item:nth-child(2) {
+    background-image: url(../img/we_manage.jpg);
+}
+
+.story__item:nth-child(3) {
+    background-image: url(../img/we_build.jpg);
+    margin-right: 0;
+}
+
+/* services */
+
+.services {
+    margin-bottom: 115px;
+}
+
+.services__container {
+    flex-wrap: wrap;
+}
+
+.services__top {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.services__title {
+    margin-right: auto;
+}
+
+.services__title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #00a4e5;
+    margin-top: 10px;
+}
+
+.services__top__text {
+    max-width: 406px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 173%;
+    letter-spacing: 0.02em;
+    margin-right: 32px;
+    color: var(--main-color);
+}
+
+.btn {
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 11px 29px;
+    color: #fff;
+    background-color: #00A4E5;
+    border: none;
+}
+
+
+.services__bottom {
+    gap: 28px;
+}
+
+.services__item {
+    padding: 38px 21px 35px 23px;
+    outline: 2px solid #E6E6E6;
+}
+
+.services__item__img {
+    margin-bottom: 21px;
+}
+
+.services__item__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    margin-bottom: 15px;
+    color: var(--main-color);
+}
+
+.services__item__text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 177%;
+    letter-spacing: 0.01em;
+    color: var(--main-color);
+}
+
+/*  touch */
+
+.touch {
+    margin-bottom: -1px;
+}
+
+.touch__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/touch_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1440px;
+    min-height: 499px;
+    padding: 0;
+
+}
+
+.touch__title {
+    padding-top: 120px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    max-width: 350px;
+    margin-bottom: 38px;
+    color: #48555b;
+}
+
+.touch__btn {
+    padding: 11px 26px;
+}
+
+/* sign up */
+
+.sign__up__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    min-height: 100px;
+    padding: 0;
+    background-color: #171819;
+}
+
+.sign__up__title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    margin-right: 70px;
+}
+
+.input {
+    padding: 11px 67px 11px 16px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    border: none;
+}
+
+.sign__up__btn {
+    padding: 11px 49px;
+}
+
+/* footer */
+
+.footer__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #141A20;
+    max-width: 1440px;
+    min-height: 240px;
+    padding: 44px 23px 50px 0;
+}
+
+.footer__company {
+    margin-right: 71px;
+}
+
+.footer__title {
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+
+.footer__nav_title {
+    margin-bottom: 10px;
+}
+
+.footer__logo {
+    display: block;
+    width: 101px;
+    height: 23px;
+    margin-bottom: 15px;
+}
+
+.footer__text {
+    max-width: 250px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 173%;
+    letter-spacing: 0.08em;
+    color: #fff;
+}
+
+.footer__nav {
+    margin-right: 58px;
+}
+
+.footer__List:nth-child(1) {
+    margin-right: 34px;
+}
+
+.footer__List:nth-child(2) {
+    margin-right: 38px;
+}
+
+.footer__item {
+    list-style: none;
+}
+
+.footer__contact_title {
+    margin-bottom: 15px;
+}
+
+.footer__link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 227%;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.footer__contact {
+    flex-direction: column;
+    max-width: 141px;
+    padding-right: 15px;
+    margin-right: 46px;
+}
+
+.footer__address {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 145%;
+    letter-spacing: 0.08em;
+    color: #fff;
+    margin-bottom: 19px;
+}
+
+.footer__contacts {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 145%;
+    letter-spacing: 0.08em;
+    color: #fff;
+}
+
+.footer__contacts:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+
+.social__list {
+    list-style: none;
+    padding-top: 30px;
+    gap: 25px;
+}
+
+.footer__bottom {
+    justify-content: center;
+    align-items: center;
+    height: 49px;
+    background-color: #171819;
+    padding: 22px;
+}
+
+.footer__bottom__text {
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: #fff;
+}

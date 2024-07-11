@@ -1,0 +1,229 @@
+    @media screen and (max-width: 1440px) {
+        .container {
+            padding: 0 50px;
+        }
+
+        .services__container {
+            justify-content: center;
+        }
+
+        .services__top {
+            max-width: 940px;
+        }
+    }
+
+    @media screen and (max-width: 1140px) {
+        .nav__bar {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .story__inner {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .story__left {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .story__right {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width: 980px) {
+        .services__top {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .services__title {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .services__title::after {
+            margin: 10px auto 0;
+        }
+
+        .services__bottom {
+            flex-wrap: wrap;
+        }
+
+        .footer__nav {
+            display: none;
+        }
+
+        .sign__up__container {
+            flex-wrap: wrap;
+            align-items: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .sign__up__title {
+            text-align: center;
+            display: block;
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        .footer__container {
+            padding-right: 0;
+        }
+    }
+
+    @media screen and (max-width: 660px) {
+
+        .nav__bar {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav__bar_logo {
+            background-repeat: no-repeat;
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+
+        .services__top__text {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        .nav {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .footer__container {
+            flex-wrap: wrap;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .footer__contact {
+            margin-right: 0;
+            padding-right: 0;
+        }
+
+        .footer__social {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+
+    }
+
+    @media screen and (max-width: 579px) {
+
+        .footer__container {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .footer__company {
+            /* display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 30px; */
+
+        }
+
+    }
+
+    @media screen and (max-width: 541px) {
+
+        .nav__bar {
+            display: none;
+        }
+
+        .story__right {
+            flex-wrap: wrap;
+        }
+
+        .footer__company {
+            display: none;
+        }
+
+        .footer__contact {
+            max-width: 100%;
+        }
+
+        .story__item {
+            margin-right: 0;
+        }
+
+        .story__right {
+            gap: 20px;
+        }
+    }
+
+    @media screen and (max-width:320px) {
+
+        .header__container {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .header__title {
+            font-size: 46px;
+        }
+
+        .nav__bar {
+            display: none;
+        }
+
+        .story__left {
+            margin-right: 0;
+        }
+
+        .services__top__text {
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+
+        .story__item {
+            margin-right: 0;
+        }
+
+        .story__item:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        .input {
+            padding: 0;
+        }
+
+        .services {
+            margin-bottom: 0;
+        }
+
+        .sign__up__container {
+            padding: 5px 15px 5px 15px;
+            ;
+        }
+
+        .sign__up__btn {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .footer__container {
+            padding: 20px 15px 20px 15px;
+        }
+
+        .footer__text {
+            display: none;
+        }
+
+
+    }
